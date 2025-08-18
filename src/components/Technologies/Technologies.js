@@ -51,7 +51,7 @@ const Technologies = () =>  (
           <ListParagraph>
             Experience with <br />
             Wireshark
-
+            
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -79,6 +79,22 @@ const Technologies = () =>  (
             COMPTIA Security +  <br />
             Google Cybersecurity Professional Certificate <br />
             COMPTIA A+ (In Progres) 
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+       <ListItem>
+        <DiZend size="3rem" />
+        <ListContainer>
+          <ListTitle>Linux Project Completed</ListTitle>
+          <ListParagraph>
+            
+            Self-hosted VPN (Wire Guard)  <br />
+            SSH honeypot with alerting <br />
+            File encryption, malware & ransomware detection tools <br />
+            Firewall setup and intrusion detection (DoS, SQLi, phishing) <br />
+            Log Analyzer (Python) <br />
+            Intrusion Detection Simulation (Bash) <br />
+            Personal Portfolio Website<br />
           </ListParagraph>
         </ListContainer>
       </ListItem>
