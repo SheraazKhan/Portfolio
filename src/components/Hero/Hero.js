@@ -1,22 +1,32 @@
 import React from 'react';
+import {
+  HeroSection,
+  HeroContent,
+  HeroBadge,
+  HeroTitle,
+  HeroSubtitle,
+  ButtonGroup,
+  PrimaryButton,
+  SecondaryButton,
+} from './HeroStyles';
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
-
-const Hero = (props) => (
-<Section row nopadding>
-  <LeftSection>
-    <SectionTitle main center>
-      Welcome to <br />
-      My Personal Portfolio
-    </SectionTitle>
-    <SectionText>
-      The purpose of this Portfolio is to show what I have done and capable of. Click the learn more for my github.
-    </SectionText>
-    <Button onClick={() => window.location = 'github.com/SheraazKhan'}>Learn More</Button>
-  </LeftSection>
-</Section>
+const Hero = () => (
+  <HeroSection>
+    <HeroContent>
+      <HeroBadge>Software Developer &amp; IT Specialist</HeroBadge>
+      <HeroTitle>
+        Building the Future,<br />
+        One Line at a Time
+      </HeroTitle>
+      <HeroSubtitle>
+        I create modern, performant digital experiences. Explore my projects and see what I can bring to your team.
+      </HeroSubtitle>
+      <ButtonGroup>
+        <PrimaryButton href="#projects">View Projects</PrimaryButton>
+        <SecondaryButton href="#about">Get In Touch</SecondaryButton>
+      </ButtonGroup>
+    </HeroContent>
+  </HeroSection>
 );
 
 export default Hero;

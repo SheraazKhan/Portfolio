@@ -23,13 +23,22 @@ export const Boxes = styled.div`
 `
 
 export const Box = styled.div`
-  background: #212D45;
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   height: 144px;
   padding: 24px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    border-color: rgba(168, 85, 247, 0.2);
+    box-shadow: 0 8px 30px rgba(168, 85, 247, 0.08);
+  }
+
   @media ${props => props.theme.breakpoints.lg} {
     height: 210px;
-
   }
 
   @media ${props => props.theme.breakpoints.md} {
@@ -40,19 +49,22 @@ export const Box = styled.div`
   @media ${props => props.theme.breakpoints.sm} {
     height: 110px;
     padding: 12px;
-    
+
     &:nth-child(2n){
       grid-row:2;
     }
   }
 `
+
 export const BoxNum = styled.h5`
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 40px;
   letter-spacing: 0.01em;
-  color: #FFFFFF;
+  background: linear-gradient(135deg, #A855F7, #06B6D4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 8px;
 
   @media ${props => props.theme.breakpoints.md} {
@@ -62,7 +74,7 @@ export const BoxNum = styled.h5`
   @media ${props => props.theme.breakpoints.sm} {
     font-size: 24px;
     line-height: 26px;
-}
+  }
 `
 
 export const BoxText = styled.p`
@@ -71,7 +83,7 @@ export const BoxText = styled.p`
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(248, 250, 252, 0.6);
 
   @media ${props => props.theme.breakpoints.md}{
     font-size: 16px;
@@ -110,18 +122,18 @@ export const JoinText = styled.h5`
   font-size: 24px;
   line-height: 40px;
   letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(248, 250, 252, 0.5);
 
-@media ${props => props.theme.breakpoints.md}{
-  line-height: 32px;
-  font-size: 20px;
-};
+  @media ${props => props.theme.breakpoints.md}{
+    line-height: 32px;
+    font-size: 20px;
+  };
 
-@media ${props => props.theme.breakpoints.sm}{
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0 0 16px;
-}
+  @media ${props => props.theme.breakpoints.sm}{
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 16px;
+  }
 `
 
 export const IconContainer = styled.div`

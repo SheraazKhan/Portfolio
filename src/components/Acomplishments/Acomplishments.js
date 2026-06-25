@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
+import ScrollReveal from '../ScrollReveal/ScrollReveal';
 
 const data = [
   // { number: 20, text: 'Open Source Projects'},
@@ -11,18 +12,22 @@ const data = [
 ];
 
 const Acomplishments = () => (
-<Section>
-  <SectionTitle> Personal Acomplishments</SectionTitle>
-  <Boxes>
-    {data.map((card, index) => 
-        <Box key={index}>
-          <BoxNum>{card.number}+</BoxNum>
-        </Box>)}
+  <Section>
+    <ScrollReveal>
+      <SectionTitle>Personal Accomplishments</SectionTitle>
+    </ScrollReveal>
+    <ScrollReveal delay={0.2}>
+      <Boxes>
+        {data.map((card, index) =>
+          <Box key={index}>
+            <BoxNum>{card.number}+</BoxNum>
+          </Box>)}
         <Box>
           <BoxText>Info coming soon</BoxText>
         </Box>
-  </Boxes>
-</Section>
+      </Boxes>
+    </ScrollReveal>
+  </Section>
 );
 
 export default Acomplishments;
