@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: 'LocalReply AI',
+    description: "A full-stack SaaS platform that helps local business owners manage and reply to Google reviews. Uses Google's Gemini AI to generate three tone-adapted reply drafts per review (empathetic for negative reviews, SEO-keyword-optimized for positive ones), with Stripe subscription billing, secure OAuth authentication, and a Google Business Profile integration.",
+    image: '/images/LocalReplyAI.png',
+    tags: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Gemini AI', 'Stripe'],
+    source: 'https://github.com/SheraazKhan/localreply-ai',
+    visit: 'https://github.com/SheraazKhan/localreply-ai',
+    id: 2,
+  },
+  {
     title: 'PacketSniffer',
     description: "A real-time network packet sniffer with a modern graphical user interface (GUI) built using Python, Scapy, and ttkbootstrap. It captures and displays UDP, DNS, TCP, ARP, and ICMP packets on your network interface, with live filtering, logging, and export capabilities.",
     image: '/images/Packetsniffer1.png',
