@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: 'Aurora Streaming',
+    description: "A Netflix-inspired streaming platform built with Next.js. Browse movies and TV shows powered by the TMDB API, with Firebase authentication, personalized user profiles, an HLS-powered video player, mood-based recommendations, a personal watchlist, and viewing stats — installable as a PWA.",
+    image: '/images/projects.jpeg',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Firebase', 'TMDB API'],
+    source: 'https://github.com/SheraazKhan/Aurora-streaming',
+    visit: 'https://aurora-streaming.vercel.app/',
+    id: 3,
+  },
+  {
     title: 'LocalReply AI',
     description: "A full-stack SaaS platform that helps local business owners manage and reply to Google reviews. Uses Google's Gemini AI to generate three tone-adapted reply drafts per review (empathetic for negative reviews, SEO-keyword-optimized for positive ones), with Stripe subscription billing, secure OAuth authentication, and a Google Business Profile integration.",
     image: '/images/LocalReplyAI.png',
