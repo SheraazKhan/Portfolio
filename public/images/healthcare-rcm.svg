@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="Healthcare data platform: 5.5 million billing records analysed in PostgreSQL">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050816"/>
+      <stop offset="55%" stop-color="#0A1020"/>
+      <stop offset="100%" stop-color="#0D1526"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.75" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="560" fill="url(#bg)"/>
+  <rect width="1200" height="560" fill="url(#grid)"/>
+  <rect width="1200" height="560" fill="url(#glow)"/>
+
+  <!-- ECG trace: the subject's own instrument vernacular -->
+  <path d="M0 400 H180 L206 400 L222 352 L240 448 L258 386 L276 400 H430 L456 400 L472 352 L490 448 L508 386 L526 400 H700 L726 400 L742 352 L760 448 L778 386 L796 400 H1200"
+        fill="none" stroke="#06B6D4" stroke-opacity="0.42" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M0 400 H180 L206 400 L222 352 L240 448 L258 386 L276 400 H430"
+        fill="none" stroke="#06B6D4" stroke-opacity="0.9" stroke-width="3"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- accent rule -->
+  <rect x="72" y="86" width="96" height="4" rx="2" fill="url(#accent)"/>
+
+  <text x="72" y="150" font-family="Inter, Segoe UI, system-ui, sans-serif"
+        font-size="26" font-weight="600" fill="#06B6D4" letter-spacing="4">
+    POSTGRESQL · DATA ENGINEERING
+  </text>
+
+  <text x="72" y="232" font-family="Outfit, Inter, Segoe UI, system-ui, sans-serif"
+        font-size="66" font-weight="700" fill="#F8FAFC" letter-spacing="-1.5">
+    Healthcare Revenue Cycle
+  </text>
+  <text x="72" y="300" font-family="Outfit, Inter, Segoe UI, system-ui, sans-serif"
+        font-size="66" font-weight="700" fill="#F8FAFC" letter-spacing="-1.5">
+    &amp; Patient Flow
+  </text>
+
+  <!-- metric row -->
+  <g font-family="Inter, Segoe UI, system-ui, sans-serif">
+    <text x="72"  y="492" font-size="46" font-weight="700" fill="#F8FAFC">5.5M</text>
+    <text x="72"  y="524" font-size="20" font-weight="500" fill="#94A3B8" letter-spacing="1.5">RECORDS</text>
+
+    <text x="290" y="492" font-size="46" font-weight="700" fill="#F8FAFC">43.6&#215;</text>
+    <text x="290" y="524" font-size="20" font-weight="500" fill="#94A3B8" letter-spacing="1.5">FASTER</text>
+
+    <text x="512" y="492" font-size="46" font-weight="700" fill="#F8FAFC">3,847</text>
+    <text x="512" y="524" font-size="20" font-weight="500" fill="#94A3B8" letter-spacing="1.5">FACILITIES</text>
+
+    <text x="762" y="492" font-size="46" font-weight="700" fill="#F8FAFC">15</text>
+    <text x="762" y="524" font-size="20" font-weight="500" fill="#94A3B8" letter-spacing="1.5">DQ CHECKS</text>
+  </g>
+
+  <!-- separators -->
+  <g fill="#FFFFFF" fill-opacity="0.12">
+    <rect x="250" y="452" width="1" height="76"/>
+    <rect x="472" y="452" width="1" height="76"/>
+    <rect x="722" y="452" width="1" height="76"/>
+  </g>
+</svg>

@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: 'Healthcare Revenue Cycle & Patient Flow',
+    description: "An end-to-end PostgreSQL analytics platform over 5.5 million synthetic hospital billing records across 3,847 facilities and 4 time zones. Covers generation, bulk load, validation, dimensional modelling and reporting — with a 15-check data-quality gate that halts the pipeline on real defects, time-zone-correct reporting that proves naive UTC bucketing misfiles 20–37% of records onto the wrong date, and execution-plan-driven index tuning that cut a key query 43.6× (646ms → 15ms). The failed experiments are documented too, including a BRIN index 332× smaller that was slower than no index at all.",
+    image: '/images/healthcare-rcm.svg',
+    tags: ['PostgreSQL', 'SQL', 'Data Engineering', 'ETL', 'Query Optimization'],
+    source: 'https://github.com/SheraazKhan/healthcare-rcm-platform',
+    visit: 'https://github.com/SheraazKhan/healthcare-rcm-platform',
+    id: 4,
+  },
+  {
     title: 'Aurora Streaming',
     description: "A Netflix-inspired streaming platform built with Next.js. Browse movies and TV shows powered by the TMDB API, with Firebase authentication, personalized user profiles, an HLS-powered video player, mood-based recommendations, a personal watchlist, and viewing stats — installable as a PWA.",
     image: '/images/projects.jpeg',
