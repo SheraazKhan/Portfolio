@@ -28,11 +28,11 @@ export const projects = [
   },
   {
     title: 'PacketSniffer',
-    description: "A real-time network packet sniffer with a modern graphical user interface (GUI) built using Python, Scapy, and ttkbootstrap. It captures and displays UDP, DNS, TCP, ARP, and ICMP packets on your network interface, with live filtering, logging, and export capabilities.",
+    description: "A real-time network packet sniffer in Python with a ttkbootstrap GUI. Captures on any interface with BPF and per-protocol filtering, decodes each packet down to a hex dump, and groups traffic into conversations you can follow end to end. Adds passive threat detection — ARP spoofing, port scans, DNS tunneling and cleartext credentials — plus rolling throughput graphs stacked by protocol. Built on a threaded capture pipeline that hands packets to the UI through a bounded queue, so the interface stays responsive on a busy link and a long capture cannot exhaust memory.",
     image: '/images/Packetsniffer1.png',
-    tags: ['Python'],
-    source: 'https://github.com/SheraazKhan',
-    visit: 'https://github.com/SheraazKhan',
+    tags: ['Python', 'Scapy', 'Tkinter', 'Networking', 'Security'],
+    source: 'https://github.com/SheraazKhan/packet-sniffer',
+    visit: 'https://github.com/SheraazKhan/packet-sniffer',
     id: 0,
   },
   {
