@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: 'Multi-Channel Marketing Attribution Engine',
+    description: "Replaces last-click attribution with two independent data-driven models over 50,000 synthetic customer journeys: a Markov chain removal effect solved with absorbing-state linear algebra (fundamental matrix, not Monte Carlo — exact and fast enough to bootstrap 200 times), and an exact Shapley value treating each channel as a player in a cooperative game. Both agree that last-click overstates Paid Search by 91% and Email by 82% while starving the channels that actually create demand by ~55% — because Display Ads opens 39% of converting journeys but closes only 11%. Turns that into a $10M budget reallocation with ±40% executability guardrails and diminishing-returns curves, worth $1.73M in additional revenue per cycle. Ships an interactive dashboard and a 34-assertion test suite that verifies the Shapley efficiency, symmetry and null-player axioms and checks the allocator against brute force.",
+    image: '/images/attribution-engine.svg',
+    tags: ['Python', 'pandas', 'NumPy', 'Markov Chains', 'Game Theory', 'Marketing Analytics'],
+    source: 'https://github.com/SheraazKhan/marketing-attribution-engine',
+    visit: 'https://sheraazkhan.github.io/marketing-attribution-engine/',
+    id: 5,
+  },
+  {
     title: 'Healthcare Revenue Cycle & Patient Flow',
     description: "An end-to-end PostgreSQL analytics platform over 5.5 million synthetic hospital billing records across 3,847 facilities and 4 time zones. Covers generation, bulk load, validation, dimensional modelling and reporting — with a 15-check data-quality gate that halts the pipeline on real defects, time-zone-correct reporting that proves naive UTC bucketing misfiles 20–37% of records onto the wrong date, and execution-plan-driven index tuning that cut a key query 43.6× (646ms → 15ms). The failed experiments are documented too, including a BRIN index 332× smaller that was slower than no index at all.",
     image: '/images/healthcare-rcm.svg',
